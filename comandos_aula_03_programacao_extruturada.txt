@@ -1,0 +1,14 @@
+getch() - Lê uma letra
+getche() - Lê uma letra e exibe a letra
+getchar () - Lê uma letra e espera enter
+gets () - Lê uma string (variável de cadeia)
+
+putchar() - Mostra um cararter
+puts() - Mostra uma string
+
+strcpy() - copia o valor de uma variável para outra
+strlen() - conta quantos caracteres tem uma variável
+strcmp() - vai comparar duas variáveis e se for falso retorna zero
+strcat() - ira concatenar (unir) duas variaveis em uma variável
+sprintf() - Vai armazenar dentro de uma variavel exatamente um "printf"
+Ex: sprintf - (X, "texto dentro de um print %f",n)
