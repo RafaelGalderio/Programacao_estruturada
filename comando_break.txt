@@ -1,0 +1,10 @@
+switch (T) int ou chart
+casa 1:
+c:
+break;
+case 2:
+c2;
+break;
+defalt:
+c3;
+break;
