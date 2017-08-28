@@ -1,23 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
 int main()
-{char nome_01 [30], nome_02[30];
-printf ("Informe seu nome: \n");
-gets (nome_01);
-printf ("Informe um outro nome: \n");
-gets (nome_02);
-strlen (nome_01);
-strlen (nome_02);
-if (strlen(nome_01)==strlen(nome_02))
 {
-    printf ("Os nomes informados sao do mesmo tamanho.");
+
+float num[15];
+int i;
+printf ("Informe 15 numeros aleatorios: \n");
+for (i=0; i<15; i++ )
+{
+    scanf ("%f",&num[i]);
+    num[i]=pow (num[i],2);
 }
-    else
-    {
-       printf ("O primeiro nome tem %d caracteres e o segundo nome tem %d ",strlen(nome_01),strlen(nome_02));
-    }
+for (i=0; i<15; i++)
+{
+    printf ("\n %i O numero ao quadrado eh: %.4f",i+1,num[i]);
+}
+    return 0;
 }
 /*
-2) Construa um programa que leia dois nomes e diga se ambos têm o mesmo tamanho. Caso não
-tenham, diga o tamanho de cada um deles.
+Escreva um programa que receba quinze números do usuário e imprima o quadrado de cada
+número.
 */

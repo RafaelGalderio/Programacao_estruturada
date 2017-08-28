@@ -1,27 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
 int main()
-{char nome[30], sexo[30];
-printf ("Informe o seu nome: \n");
-gets(nome);
-printf ("Informe o seu sexo: \n");
-gets(sexo);
-if (sexo==masculino)
 {
-    printf("Bom dia Sr. %d",nome);
-    if else (sexo==feminino)
+    float num_b, produto;
+    int num_a, i;
+    printf ("Informe um numero inteiro e numero real: \n");
+    scanf ("%i %f",&num_a,&num_b);
+    for (i=0; i<num_a; i++)
     {
-        printf("Bom dia Sra. %d",nome);
+        produto = produto+num_b;
     }
+    printf ("O valor do produto eh %.2f: ",produto);
 }
-    else
-    {
-        printf ("Voce informou um sexo nao cadastrado.\n")
-    }
-}
-
 /*
-3) Construa um programa que leia o nome e o sexo de uma pessoa e construa e apresente uma
-string com o texto “BOM DIA SR. <NOME>” caso o sexo seja masculinho, e “BOM DIA SRA.
-<NOME>” caso o sexo seja feminino.
+Escreva um programa que realize o produto de A (número real) por B (número inteiro), ou seja, A
+* B, através de adições (somas). Esses dois valores são passados pelo usuário através do teclado.
 */
+
+
