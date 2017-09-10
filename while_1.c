@@ -15,18 +15,18 @@ int main()
             maior_02=maior_01;
             maior_01=valor;
         }
-        if else (valor>maior_02 && valor>maior_03)
+        else if (valor>maior_02 && valor>maior_03)
             {
                 maior_03=maior_02;
                 maior_02=valor;
             }
-        if else (valor>maior03)
+        else if (valor>maior_03)
             {
                 maior_03=valor;
             }
         contador++;
     }
-    printf ("O maior valores eh: %d %d %d",maior_01,maior_02,maior_03);
+    printf ("Os maiores valores sao: %d %d %d",maior_01,maior_02,maior_03);
 
     return 0;
 }
