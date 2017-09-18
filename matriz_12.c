@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h> //necessário para usar setlocale
+#include <locale.h> //necessÃ¡rio para usar setlocale
 #include <string.h>
 main()
-{setlocale(LC_ALL,"Portuguese");//Habilita a acentuação em português
+{setlocale(LC_ALL,"Portuguese");//Habilita a acentuaÃ§Ã£o em portuguÃªs
 int i,j;
 int precos[3][4];
 char nomes_lojas[3][20], nomes_produtos[4][20];
@@ -20,14 +20,15 @@ for(i=0 ; i<4; i++)
         gets(nomes_produtos[i]);
     }
 printf("\n");
-printf ("INFORME OS VALORES DA MATRIZ PREÇOS, SÃO 3 LOJAS E CADA LOJA COM 4 PRODUTOS.\n");
+printf ("INFORME OS VALORES DA MATRIZ PREÃ‡OS, SÃƒO 3 LOJAS E CADA LOJA COM 4 PRODUTOS.\n");
 for(i=0; i<3; i++)
     {
        for(j=0 ; j<4; j++)
             {
-                printf("Informe o valor do produto %s das loja %s:",nomes_produtos[i],nomes_lojas[i]);
-                scanf("%d",&precos[i][j]);
+            printf("Informe o valor do produto %s das loja %s:",nomes_produtos[j],nomes_lojas[i]);
+            scanf("%d",&precos[i][j]);
             }
+
     }
 printf("\n");
 printf("Segue o vetor lojas:\n");
@@ -40,7 +41,7 @@ for(i=0 ; i<4; i++)
     {
       printf("%s\n",nomes_produtos[i]);
     }
-printf("\nSegue a Matriz preços:\n");
+printf("\nSegue a Matriz preÃ§os:\n");
 for (i=0; i<3; i++)
         {
             for(j=0; j<4; j++)
@@ -49,19 +50,32 @@ for (i=0; i<3; i++)
             }
             printf("\n");
         }
+printf("\nSegue os nomes dos produtos e loja em que o preÃ§o Ã© menor que R$ 120,00:\n");
+for (i=0; i<3; i++)
+        {
+            for(j=0; j<4; j++)
+            {
+                if (precos[i][j]<=120)
+                {
+                    printf ("\nO valor da produto %s da empresa %s Ã© %d",nomes_produtos[j],nomes_lojas[i],precos[i][j]);
+                }
+
+            }
+            printf("\n");
+        }
 ;
 return 0;
 }
 
 /*
-12. Faça um programa que preencha:
-a. Um vetor de 8 posições, contendo nomes de
+12. FaÃ§a um programa que preencha:
+a. Um vetor de 8 posiÃ§Ãµes, contendo nomes de
 lojas;
-b. Outro vetor com quatro posições contendo
+b. Outro vetor com quatro posiÃ§Ãµes contendo
 nomes de produtos;
-c. Uma matriz com os preços de todos os
+c. Uma matriz com os preÃ§os de todos os
 produtos em cada loja.
-O programa deverá mostrar todas as relações (nome
-do produto – nome da loja) em que o preço não
+O programa deverÃ¡ mostrar todas as relaÃ§Ãµes (nome
+do produto â€“ nome da loja) em que o preÃ§o nÃ£o
 ultrapasse R$ 120,00.
 */
