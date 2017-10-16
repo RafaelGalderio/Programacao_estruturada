@@ -21,7 +21,7 @@ int mdc (int x, int y)
 }
 
 /*
-O m·ximo divisor comum dos inteiros x e y È o maior inteiro que
-divide x e y sem gerar resto. Escreva uma funÁ„o recursiva mdc
-que retorne o m·ximo divisor comum de x e y
+O m√°ximo divisor comum dos inteiros x e y √© o maior inteiro que
+divide x e y sem gerar resto. Escreva uma fun√ß√£o recursiva mdc
+que retorne o m√°ximo divisor comum de x e y
 */
