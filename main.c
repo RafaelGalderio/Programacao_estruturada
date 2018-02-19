@@ -1,84 +1,62 @@
+//Exercício de Cadastro
+//Rafael De Luca
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h> //necess�rio para usar setlocale
 #include <string.h>
+#include <locale.h>
+#define maximo 2
+
+int    opcao=0;
+int    i;
+//menu
 
 
-int main()
-{setlocale(LC_ALL, "Portuguese");//habilita a acentua��o para o portugu�s
-int mat[6][6];
-int lin, col;
-printf("Segue a matriz 6x6:\n");
-for(lin=0; lin<6; lin++)
-    {
-    for(col=0; col<6; col++)
-        {
+void main(){
+    setlocale(LC_ALL, "Portuguese");
+    printf("Instituto Federal do Rio Grande do Sul\n");
+    printf("Autor: Rafael De Luca\n\n");
+    menu();
+    }
+void menu(){
+    printf ("Quantidade máxima de registro: %d\n",maximo);
+    printf ("-------------------------------\n");
+    printf ("Escolha uma opção: \n\n");
+    printf ("1 - CADASTRAR CLIENTE\n");
+    printf ("2 - BUSCAR CLIENTE\n");
+    printf ("3 - LISTAR CLIENTE\n");
+    printf ("4 - EXCLUIR CLIENTE\n");
+    printf ("5 - SAIR\n");
 
-         mat[lin][col] = 3*lin+2*col;
-         printf("%3d ", mat[lin][col]);
-        }
-    printf("\n");
+    scanf("%d", &opcao);
+    switch (opcao){
+        case 1:
+        menu();
+        break;
     }
-system ("PAUSE");
-printf("\nSegue os valores da Diagonal principal\n");
-for(lin=0; lin<6; lin++)
-    {
-    for(col=0; col<6; col++)
-        {
-        if (lin==col)
-            {
-                printf("%3d ", mat[lin][col]);
-            }
-        }
-    }
-printf("\n");
-printf("\nSegue os valores do triangulo superior � diagonal principal:");
-printf("\n");
-for(lin=0; lin<6; lin++)
-    {
-    for(col=0; col<6; col++)
-        {
-        if (lin<col)
-            {
-                printf("%3d ", mat[lin][col]);
-            }
-        }
-    printf("\n");
-    }
-    printf("\nSegue os valores do triangulo inferior � diagonal principal:");
-    for(lin=0; lin<6; lin++)
-    {
-    for(col=0; col<6; col++)
-        {
-        if (lin>col)
-            {
-                printf("%3d ", mat[lin][col]);
-            }
-        }
-    printf("\n");
-    }
-printf("\nSegue os valores da diagonal secund�ria");
-printf("\n");
-for (lin=0 ; lin<6 ; lin++)
-    {
-        for (col=0; col<6 ; col++)
-        {
-            if (col+lin==5)
-            {
-                printf("%3d",mat[lin][col]);
-            }
-        }
-    }
-    printf("\n");
-return 0;
 }
 
-/*
-10. Fa�a um programa que preencha uma matriz 6x6,
-calcule e informe:
-a. A diagonal principal;
-b. O tri�ngulo superior � diagonal principal;
-c. O tri�ngulo inferior � diagonal principal;
-d. Tudo, exceto a diagonal principal;
-e. A diagonal secund�ria.
+
+/* Enunciado exercício
+CADASTRAR CLIENTE
+BUSCAR CLIENTE
+LISTAR CLIENTES
+EXCLUIR CLIENTE
+
+ Nome;
+
+ Sexo;
+
+ Data de nascimento;
+
+ Idade;
+
+ Doenças importantes;
+
+ Não devem ser utilizadas variáveis globais.
+ Todas as informações necessárias pelas funções devem ser passadas como parâmetro.
+ O usuário deverá poder utilizar seu programa, solicitando as opções tantas vezes quanto ele deseje e em qualquer ordem.
+ Limite o número de cadastro de pacientes a 10. Após ocupados os 10 espaços para cadastro, seu programa não deve aceitar
+novas inserções, a menos que algum cadastro seja excluído.
+
 */
