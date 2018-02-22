@@ -61,7 +61,7 @@ void menu(){
 
         default:
             limpa_tela();
-            printf("Voce escolheu uma opcao invalida, escolha um valida (1-5)\n\n");
+            printf("Voce escolheu uma opcao invalida, escolha uma valida entre 1 até 5\n\n");
             menu();
 
     }
