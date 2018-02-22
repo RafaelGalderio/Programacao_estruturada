@@ -19,14 +19,15 @@ void main(){
     menu();
     }
 void menu(){
-    printf ("Quantidade máxima de registro: %d\n",maximo);
+    printf ("Quantidade maxima de registro: %d\n",maximo);
     printf ("-------------------------------\n");
-    printf ("Escolha uma opção: \n\n");
+    printf ("Escolha uma opcao: \n\n");
     printf ("1 - CADASTRAR CLIENTE\n");
     printf ("2 - BUSCAR CLIENTE\n");
     printf ("3 - LISTAR CLIENTE\n");
     printf ("4 - EXCLUIR CLIENTE\n");
     printf ("5 - SAIR\n");
+
 
     scanf("%d", &opcao);
     switch (opcao){
